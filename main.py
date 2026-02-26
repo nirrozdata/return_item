@@ -7,4 +7,6 @@ class ServiceRunner(dl.BaseServiceRunner):
         name, ext = os.path.splitext(item.filename)
         new_name = name + "_moved" + ext
         item.move(new_name)
+        print("Hello world")
+
         return item.id
